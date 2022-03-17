@@ -11,19 +11,20 @@ img {
   justify-content: center;
 }
 
+.row {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 .col-12 img {
   text-align: center;
   display: flex;
   margin: auto;
 }
 
-.navbar navbar-nav {
-  margin-left: 100px;
-}
-
 ul {
   color: black;
-  margin-left: 600px;
 }
 
 li {
