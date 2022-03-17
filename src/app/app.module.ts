@@ -8,13 +8,15 @@ import { VisitAppComponent } from './visit-app.component';
 import { VisitService } from './shared/visits.service';
 import { RouterModule } from '@angular/router';
 import { VisitsThumbnailComponent } from './visit-thumbnail.component';
+import { VisitDetailsComponent } from './visit.details.component';
 
 @NgModule({
   declarations: [
     VisitAppComponent,
     NavBar,
     VisitListComponent,
-    VisitsThumbnailComponent
+    VisitsThumbnailComponent,
+    VisitDetailsComponent
   ],
   imports: [
     BrowserModule,
