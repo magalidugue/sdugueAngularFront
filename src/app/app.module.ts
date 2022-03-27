@@ -9,6 +9,7 @@ import { VisitService } from './shared/visits.service';
 import { RouterModule } from '@angular/router';
 import { VisitsThumbnailComponent } from './visit-thumbnail.component';
 import { VisitDetailsComponent } from './visit.details.component';
+import { VisitRouteActivator } from './visitsRouteActivator.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { VisitDetailsComponent } from './visit.details.component';
     RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [VisitService],
+  providers: [VisitService, VisitRouteActivator],
   bootstrap: [VisitAppComponent]
 })
 

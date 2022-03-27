@@ -9,6 +9,11 @@ export class VisitService {
     setTimeout(() => {subject.next(VISITS); subject.complete();}, 200)
     return subject
   }
+
+  getVisit(id: number) {
+    return VISITS.find(visit => visit.id === id)
+  }
+
 }
 
 
@@ -17,7 +22,7 @@ const VISITS: IVisit[] = [
     id: 1,
     title: 'Visite Classique',
     littleDescription: 'description',
-    bigDesvription: 'big description',
+    bigDescription: 'orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat urna vehicula, convallis lorem vitae, accumsan sapien. Fusce in purus in arcu accumsan fringilla. Fusce suscipit odio vitae nisi facilisis, sed dignissim libero iaculis. Maecenas quam sapien, hendrerit eget eros nec, vulputate aliquam ligula. Nulla sed sapien pretium, pretium ex et, finibus leo. ',
     dates: [
       new Date('9/26/2023')
     ],
@@ -29,7 +34,7 @@ const VISITS: IVisit[] = [
     id: 2,
     title: 'Atelier adultes',
     littleDescription: 'description',
-    bigDesvription: 'big description',
+    bigDescription: 'orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat urna vehicula, convallis lorem vitae, accumsan sapien. Fusce in purus in arcu accumsan fringilla. Fusce suscipit odio vitae nisi facilisis, sed dignissim libero iaculis. Maecenas quam sapien, hendrerit eget eros nec, vulputate aliquam ligula. Nulla sed sapien pretium, pretium ex et, finibus leo. ',
     dates: [
       new Date('9/26/2023')
     ],
@@ -41,7 +46,7 @@ const VISITS: IVisit[] = [
     id: 1,
     title: 'Atelier Enfants',
     littleDescription: 'description',
-    bigDesvription: 'big description',
+    bigDescription: 'orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat urna vehicula, convallis lorem vitae, accumsan sapien. Fusce in purus in arcu accumsan fringilla. Fusce suscipit odio vitae nisi facilisis, sed dignissim libero iaculis. Maecenas quam sapien, hendrerit eget eros nec, vulputate aliquam ligula. Nulla sed sapien pretium, pretium ex et, finibus leo. ',
     dates: [
       new Date('9/26/2023')
     ],
