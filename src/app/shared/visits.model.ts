@@ -3,7 +3,7 @@ export interface IVisit {
   id: number
   title: string
   littleDescription: String
-  bigDesvription: String
+  bigDescription: String
   dates: Date[]
   time: string
   price: number
