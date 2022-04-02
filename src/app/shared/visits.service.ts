@@ -58,21 +58,18 @@ const VISITS: IVisit[] = [
         date: new Date('8/15/2022'),
         time : '9h30 - 12h30',
         fullPrice: '50 euros',
-        halfPrice: '',
         placesAvailable: 3
       },
       {
        date: new Date('8/12/2022'),
        time : '9h30 - 12h30',
        fullPrice: '50 euros',
-       halfPrice: '',
        placesAvailable: 3
      },
      {
        date: new Date('8/13/2022'),
        time : '9h30 - 12h30',
        fullPrice: '50 euros',
-       halfPrice: '',
        placesAvailable: 3
      },
      ],
@@ -88,21 +85,18 @@ const VISITS: IVisit[] = [
         date: new Date('6/15/2022'),
         time : '15h00 - 16h30',
         fullPrice: '18 euros',
-        halfPrice: '',
         placesAvailable: 4
       },
       {
        date: new Date('6/12/2022'),
        time : '15h00 - 16h30',
         fullPrice: '18 euros',
-        halfPrice: '',
        placesAvailable: 4
      },
      {
        date: new Date('6/13/2022'),
        time : '15h00 - 16h30',
        fullPrice: '18 euros',
-       halfPrice: '',
        placesAvailable: 4
      },
      ],
