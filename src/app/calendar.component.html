@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Choississez la session que vous souhaitez réserver</h1> <hr>
+  <div class="row" *ngFor="let session of sessions">
+    <div class="col-md-10">
+          <h4>{{session.date | date : 'dd/MM/yyyy'}}</h4>
+          <p>{{session.time}}</p>
+          <p>{{session.price}}</p><br />
+          <button type="button" class="btn btn-warning">Réserver</button> <hr>
+    </div>
+  </div>
+
+</div>
+

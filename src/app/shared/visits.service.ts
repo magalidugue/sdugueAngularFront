@@ -23,11 +23,23 @@ const VISITS: IVisit[] = [
     title: 'Visite Classique',
     littleDescription: 'description',
     bigDescription: 'orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat urna vehicula, convallis lorem vitae, accumsan sapien. Fusce in purus in arcu accumsan fringilla. Fusce suscipit odio vitae nisi facilisis, sed dignissim libero iaculis. Maecenas quam sapien, hendrerit eget eros nec, vulputate aliquam ligula. Nulla sed sapien pretium, pretium ex et, finibus leo. ',
-    dates: [
-      new Date('9/26/2023')
+    session: [
+     {
+       date: new Date('7/15/2022'),
+       time : '10:00 am',
+       price: '10 euros'
+     },
+     {
+      date: new Date('7/12/2022'),
+      time : '10:00 am',
+      price: '10 euros'
+    },
+    {
+      date: new Date('7/13/2022'),
+      time : '10:00 am',
+      price: '10 euros'
+    },
     ],
-    time: '15:00',
-    price: 10,
     imageUrl: '../assets/church-window-gff159cb2f_1920.jpg'
   },
   {
@@ -35,11 +47,23 @@ const VISITS: IVisit[] = [
     title: 'Atelier adultes',
     littleDescription: 'description',
     bigDescription: 'orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat urna vehicula, convallis lorem vitae, accumsan sapien. Fusce in purus in arcu accumsan fringilla. Fusce suscipit odio vitae nisi facilisis, sed dignissim libero iaculis. Maecenas quam sapien, hendrerit eget eros nec, vulputate aliquam ligula. Nulla sed sapien pretium, pretium ex et, finibus leo. ',
-    dates: [
-      new Date('9/26/2023')
-    ],
-    time: '15:00',
-    price: 10,
+    session: [
+      {
+        date: new Date('8/15/2022'),
+        time : '10:00 am',
+        price: '10 euros'
+      },
+      {
+       date: new Date('8/12/2022'),
+       time : '10:00 am',
+       price: '10 euros'
+     },
+     {
+       date: new Date('8/13/2022'),
+       time : '10:00 am',
+       price: '10 euros'
+     },
+     ],
     imageUrl: '../assets/glass-g14fe2552c_1920.jpg'
   },
   {
@@ -47,11 +71,23 @@ const VISITS: IVisit[] = [
     title: 'Atelier Enfants',
     littleDescription: 'description',
     bigDescription: 'orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat urna vehicula, convallis lorem vitae, accumsan sapien. Fusce in purus in arcu accumsan fringilla. Fusce suscipit odio vitae nisi facilisis, sed dignissim libero iaculis. Maecenas quam sapien, hendrerit eget eros nec, vulputate aliquam ligula. Nulla sed sapien pretium, pretium ex et, finibus leo. ',
-    dates: [
-      new Date('9/26/2023')
-    ],
-    time: '15:00',
-    price: 10,
+    session: [
+      {
+        date: new Date('6/15/2022'),
+        time : '10:00 am',
+        price: '10 euros'
+      },
+      {
+       date: new Date('6/12/2022'),
+       time : '10:00 am',
+       price: '10 euros'
+     },
+     {
+       date: new Date('6/13/2022'),
+       time : '10:00 am',
+       price: '10 euros'
+     },
+     ],
     imageUrl: '../assets/stained-glass-g2cf2f32b6_1920.jpg'
   },
 ]

@@ -1,3 +1,4 @@
+import { Calendar } from './calendar.component';
 import { appRoutes } from './routes';
 import { VisitListComponent } from './visit-list.component';
 import { NavBar } from './navBar.component';
@@ -11,13 +12,15 @@ import { VisitsThumbnailComponent } from './visit-thumbnail.component';
 import { VisitDetailsComponent } from './visit.details.component';
 import { VisitRouteActivator } from './visitsRouteActivator.service';
 
+
 @NgModule({
   declarations: [
     VisitAppComponent,
     NavBar,
     VisitListComponent,
     VisitsThumbnailComponent,
-    VisitDetailsComponent
+    VisitDetailsComponent,
+    Calendar
   ],
   imports: [
     BrowserModule,
