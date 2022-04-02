@@ -4,9 +4,13 @@ export interface IVisit {
   title: string
   littleDescription: String
   bigDescription: String
-  dates: Date[]
+  imageUrl: string,
+  session: ISession[]
+}
+
+export interface ISession {
+  date: Date,
   time: string
-  price: number
-  imageUrl: string
+  price: string
 }
 
