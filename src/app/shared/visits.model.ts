@@ -11,6 +11,8 @@ export interface IVisit {
 export interface ISession {
   date: Date,
   time: string
-  price: string
+  fullPrice: string
+  halfPrice?: string
+  placesAvailable : number
 }
 
