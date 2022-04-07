@@ -1,0 +1,50 @@
+<h1>Réservation </h1>
+<div class="container">
+  <div class=" formulaire col-6">
+    <form [formGroup]="bookingForm">
+      <div class="form-group">
+        <label for="firstName">Nom </label>
+        <input formControlName="firstName" id="firstName" type="text" class="form-control"
+          placeholder="First Name..." />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Prénom</label>
+        <input formControlLastName="lastName" id="lastName" type="text" class="form-control"
+          placeholder="Last Name..." />
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Numéro de téléphone</label>
+        <input formControlName="phoneNumber" id="phoneNumber" type="text" class="form-control"
+          placeholder="Last Name..." />
+      </div>
+      <div class="form-group">
+        <label for="email">Adresse e-mail</label>
+        <input formControlName="email" id="email" type="text" class="form-control" placeholder="Last Name..." />
+      </div>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Ajouter des participants</mat-label>
+        <mat-select>
+          <mat-option>None</mat-option>
+          <mat-option value="1">1</mat-option>
+          <mat-option value="2">2</mat-option>
+          <mat-option value="3">3</mat-option>
+        </mat-select>
+      </mat-form-field>  <br>
+
+
+      <button type="submit" class="btn btn-primary">Save</button>
+
+    </form>
+  </div>
+
+  <div class="card-details col-6">
+    <h1>Visite classique</h1>
+    <img src="../assets/church-window-gff159cb2f_1920.jpg" alt="">
+    <p>Jeudi 12 aout 2022</p>
+    <h4 class="adresse">7 rue de la Creuse 21460 Vieux Chateau</h4>
+    <p>1h30</p>
+    <p>10 euros</p>
+  </div>
+
+</div>

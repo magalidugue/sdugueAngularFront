@@ -1,3 +1,5 @@
+import { MatSelectModule } from '@angular/material/select';
+import { BookingFormComponent } from './bookingForm.component';
 import { Calendar } from './calendar.component';
 import { appRoutes } from './routes';
 import { VisitListComponent } from './visit-list.component';
@@ -11,6 +13,8 @@ import { RouterModule } from '@angular/router';
 import { VisitsThumbnailComponent } from './visit-thumbnail.component';
 import { VisitDetailsComponent } from './visit.details.component';
 import { VisitRouteActivator } from './visitsRouteActivator.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,11 +24,15 @@ import { VisitRouteActivator } from './visitsRouteActivator.service';
     VisitListComponent,
     VisitsThumbnailComponent,
     VisitDetailsComponent,
-    Calendar
+    Calendar,
+    BookingFormComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
+    MatSelectModule,
+    ReactiveFormsModule
 
   ],
   providers: [VisitService, VisitRouteActivator],
