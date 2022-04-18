@@ -22,9 +22,12 @@
         <input formControlName="email" id="email" type="text" class="form-control" placeholder="Adresse email" />
       </div>
 
-      <label for="email">Combien de participants serez vous pour cette visite ?</label> <br>
+      <label for="otherVisitors">Combien de participants serez vous pour cette visite ?</label> <br>
       <input formControlName = "numberOfAdults" id="numberOfAdults" class="form-control" type="number" placeholder="Nombre d'adultes">
       <input formControlName = "numberOfKids" id="numberOfKids" class="form-control" type="number" placeholder="Nombre d'enfants">
+
+      <label for="otherVisitorsNames">Indiquer les noms et prénoms des autres participants </label> <br>
+      <textarea formControlName= "otherVisitorsNames" name="otherVisitorsNames" id="otherVisitorsNames" cols="80" rows="5"></textarea><br>
 
 
       <button type="submit" class="btn btn-warning">Réserver</button>

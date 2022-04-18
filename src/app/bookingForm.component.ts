@@ -38,7 +38,8 @@ export class BookingFormComponent {
   phoneNumber!: new FormControl(),
   email!: new FormControl(),
   numberOfAdults: new FormControl(),
-  numberOfKids: new FormControl()
+  numberOfKids: new FormControl(),
+  otherVisitorsNames: new FormControl()
   })
 
 
