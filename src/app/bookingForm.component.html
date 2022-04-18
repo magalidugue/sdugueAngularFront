@@ -5,46 +5,42 @@
       <div class="form-group">
         <label for="firstName">Nom </label>
         <input formControlName="firstName" id="firstName" type="text" class="form-control"
-          placeholder="First Name..." />
+          placeholder="Nom" />
       </div>
       <div class="form-group">
         <label for="lastName">Prénom</label>
         <input formControlLastName="lastName" id="lastName" type="text" class="form-control"
-          placeholder="Last Name..." />
+          placeholder="prénom" />
       </div>
       <div class="form-group">
         <label for="phoneNumber">Numéro de téléphone</label>
         <input formControlName="phoneNumber" id="phoneNumber" type="text" class="form-control"
-          placeholder="Last Name..." />
+          placeholder="Téléphone" />
       </div>
       <div class="form-group">
         <label for="email">Adresse e-mail</label>
-        <input formControlName="email" id="email" type="text" class="form-control" placeholder="Last Name..." />
+        <input formControlName="email" id="email" type="text" class="form-control" placeholder="Adresse email" />
       </div>
 
-      <mat-form-field appearance="fill">
-        <mat-label>Ajouter des participants</mat-label>
-        <mat-select>
-          <mat-option>None</mat-option>
-          <mat-option value="1">1</mat-option>
-          <mat-option value="2">2</mat-option>
-          <mat-option value="3">3</mat-option>
-        </mat-select>
-      </mat-form-field>  <br>
+      <label for="email">Combien de participants serez vous pour cette visite ?</label> <br>
+      <input formControlName = "numberOfAdults" id="numberOfAdults" class="form-control" type="number" placeholder="Nombre d'adultes">
+      <input formControlName = "numberOfKids" id="numberOfKids" class="form-control" type="number" placeholder="Nombre d'enfants">
 
 
-      <button type="submit" class="btn btn-primary">Save</button>
+      <button type="submit" class="btn btn-warning">Réserver</button>
 
     </form>
   </div>
 
   <div class="card-details col-6">
-    <h1>Visite classique</h1>
-    <img src="../assets/church-window-gff159cb2f_1920.jpg" alt="">
-    <p>Jeudi 12 aout 2022</p>
+    <h1>{{visit?.title}}</h1>
+    <img [src]="visit?.imageUrl" [alt]="visit?.title">
+    <p>{{session.date | date : 'dd/MM/yyyy'}}</p>
+    <p>{{session.time}}</p>
     <h4 class="adresse">7 rue de la Creuse 21460 Vieux Chateau</h4>
     <p>1h30</p>
-    <p>10 euros</p>
+    <p>{{session.fullPrice}}</p>
+     <p *ngIf = "session.halfPrice">  Demi Tarif (-10 ans) : {{session.halfPrice}}</p>
   </div>
 
 </div>

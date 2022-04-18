@@ -1,15 +1,17 @@
-<div class="container">
+<div  class="container">
   <h1>Choississez la session que vous souhaitez réserver</h1> <hr>
-  <div class="row" *ngFor="let session of sessions">
+  <div class="row" *ngFor="let session of sessions; let i = index" [attr.data-index] = "i">
     <div class="col-md-10">
           <h4>{{session.date | date : 'dd/MM/yyyy'}}</h4>
           <p>{{session.time}}</p>
           <p> Tarif : {{session.fullPrice}}</p>
           <p *ngIf = "session.halfPrice">  Demi Tarif (-10 ans) : {{session.halfPrice}}</p>
           <p class="places">{{session.placesAvailable}} places restantes</p> <br>
-          <button type="button" class="btn btn-warning">Réserver</button> <hr>
+          <button type="button" class="btn btn-warning" (click)="bookSession(target, i)">Réserver</button> <hr>
     </div>
   </div>
-
+  <bookingForm  *ngIf = "bookingMode" [visit] = "visit" [session] = "session"></bookingForm>
+<div class="target" #target></div>
 </div>
 
+Ò

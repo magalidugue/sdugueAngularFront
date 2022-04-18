@@ -16,23 +16,8 @@ h3 {
   text-align: center;
 }
 
-mat-form-field {
-  color: black;
-  border-color: black;
-}
-
 input {
   border-color: black;
-}
-
-mat-option {
-  border-color: black;
-}
-
-img {
-  width: 200px;
-  margin-top: 10px;
-  margin-left: 180px;
 }
 
 .container {
@@ -47,7 +32,7 @@ img {
 .card-details {
   flex-grow: 1;
   width: 200px;
-  height: auto;
+  height: 500px;
   border: solid;
   border-color: black;
   box-shadow: black;
@@ -57,6 +42,12 @@ img {
 .card-details h1 {
   text-align: center;
   margin-top: 10px;
+}
+img {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  display: flex;
 }
 
 p {
@@ -68,4 +59,16 @@ p {
 h4 {
   text-align: center;
   font-weight: bold;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+#numberOfAdults {
+  margin-bottom: 10px;
+}
+
+#numberOfKids {
+  margin-bottom: 30px;
 }

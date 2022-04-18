@@ -1,3 +1,5 @@
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+//import { SessionRouteActivator } from './sessionsRouteActivator.service';
 import { MatSelectModule } from '@angular/material/select';
 import { BookingFormComponent } from './bookingForm.component';
 import { Calendar } from './calendar.component';
@@ -25,14 +27,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     VisitsThumbnailComponent,
     VisitDetailsComponent,
     Calendar,
-    BookingFormComponent
+    BookingFormComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MatSelectModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
 
   ],
   providers: [VisitService, VisitRouteActivator],
