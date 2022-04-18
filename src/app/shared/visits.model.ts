@@ -9,6 +9,7 @@ export interface IVisit {
 }
 
 export interface ISession {
+  id: number,
   date: Date,
   time: string
   fullPrice: string

@@ -1,0 +1,74 @@
+.form-group {
+  color: black;
+}
+
+* {
+  color: black;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+}
+
+input {
+  border-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.formulaire {
+  flex-grow: 1;
+}
+
+.card-details {
+  flex-grow: 1;
+  width: 200px;
+  height: 500px;
+  border: solid;
+  border-color: black;
+  box-shadow: black;
+  margin-left: 50px;
+}
+
+.card-details h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+img {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  display: flex;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+h4 {
+  text-align: center;
+  font-weight: bold;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+#numberOfAdults {
+  margin-bottom: 10px;
+}
+
+#numberOfKids {
+  margin-bottom: 30px;
+}

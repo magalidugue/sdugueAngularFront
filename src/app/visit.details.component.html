@@ -4,11 +4,11 @@
     <div class="col-4-md-12">
       <img [src]="visit?.imageUrl" [alt]="visit?.title">
     </div>
-    <div class=" description col-4-md-12">
+    <div class="description col-4-md-12">
       <p>{{visit?.bigDescription}}</p>
     </div>
 </div>
 
 <div class="col-12">
-  <calendar [sessions] = "visit.session"></calendar>
+  <calendar [sessions] = "visit.session" [visit]="visit"></calendar>
 </div>
