@@ -26,11 +26,16 @@
       <input formControlName = "numberOfAdults" id="numberOfAdults" class="form-control" type="number" placeholder="Nombre d'adultes">
       <input formControlName = "numberOfKids" id="numberOfKids" class="form-control" type="number" placeholder="Nombre d'enfants">
 
-      <label for="otherVisitorsNames">Indiquer les noms et prénoms des autres participants </label> <br>
+      <label for="otherVisitorsNames">Indiquez les noms et prénoms des autres participants </label> <br>
       <textarea formControlName= "otherVisitorsNames" name="otherVisitorsNames" id="otherVisitorsNames" cols="80" rows="5"></textarea><br>
 
 
-      <button type="submit" class="btn btn-warning">Réserver</button>
+      <a routerLink = "/confirmation">
+        <button type="submit" class="btn btn-warning">Réserver</button>
+      </a>
+
+
+
 
     </form>
   </div>

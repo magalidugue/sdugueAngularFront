@@ -17,6 +17,7 @@ import { VisitDetailsComponent } from './visit.details.component';
 import { VisitRouteActivator } from './visitsRouteActivator.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     VisitDetailsComponent,
     Calendar,
     BookingFormComponent,
+    ConfirmationComponent,
   ],
   imports: [
     BrowserModule,
