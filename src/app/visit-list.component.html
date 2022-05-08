@@ -1,4 +1,4 @@
-<div class="introduction">
+<div class="row introduction">
   <p class="welcome">
     Bienvenue sur le site de réservation des visites de l’atelier S. Dugué
   </p>
@@ -7,10 +7,13 @@
   </p>
 </div>
 
-<div class="col-md-12">
-  <div *ngFor = 'let visit of visits' class="cards">
-    <visits-thumbnail [visit] = "visit"></visits-thumbnail>
+<div class="visits">
+  <div class="row">
+      <div class="cards col-md-12 col-sm-12 col-lg-4" *ngFor = 'let visit of visits'>
+        <visits-thumbnail [visit] = "visit"></visits-thumbnail>
+    </div>
   </div>
 </div>
+
 
 

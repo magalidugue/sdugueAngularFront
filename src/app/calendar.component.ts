@@ -1,6 +1,7 @@
 import {ISession, IVisit } from './shared/visits.model';
 import { Component, Input } from '@angular/core';
 
+
 @Component({
   selector: 'calendar',
   templateUrl: './calendar.component.html',

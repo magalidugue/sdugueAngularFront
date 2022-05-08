@@ -1,0 +1,44 @@
+p,
+h1,
+h4,
+h5 {
+  color: black;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.thankYou {
+  border: solid;
+  border-width: 0.5px;
+  border-color: black;
+  box-shadow: black;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+p,
+h4 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.forget {
+  text-decoration: underline;
+}
+
+img {
+  width: 5px;
+  height: auto;
+}
