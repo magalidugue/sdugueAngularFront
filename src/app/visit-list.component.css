@@ -1,3 +1,32 @@
+p {
+  font-size: 1rem;
+  color: black;
+}
+
+@media (min-width: 576px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 3rem;
+  }
+}
+
 .introduction {
   text-align: center;
   margin-top: 20px;
@@ -8,18 +37,18 @@
 }
 
 .chooseVisit {
+  text-align: center;
   font-size: 1.27em;
   font-weight: bold;
   margin-top: 0.25em;
 }
 
 p {
+  font-size: 1rem;
   color: black;
 }
 
-.col-md-12 {
-  width: 100%;
-  display: flex;
+.cards {
   align-items: center;
   justify-content: space-between;
 }

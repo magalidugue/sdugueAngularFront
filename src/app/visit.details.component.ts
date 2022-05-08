@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { visitAll } from '@angular/compiler';
 
 
+
 @Component({
   selector: 'visit-details',
   templateUrl: './visit.details.component.html',

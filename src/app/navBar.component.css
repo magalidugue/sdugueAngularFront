@@ -1,37 +1,7 @@
 img {
   width: auto;
-  height: 150px;
+  height: 80px;
   justify-content: center;
-}
-
-.col-12 img {
-  text-align: center;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-
-.row {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.col-12 img {
-  text-align: center;
-  display: flex;
-  margin: auto;
-}
-
-ul {
-  color: black;
-}
-
-li {
-  list-style-type: none;
-  color: black;
-  font-size: 17px;
-  margin-left: 40px;
 }
 
 a {

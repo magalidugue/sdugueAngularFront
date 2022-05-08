@@ -20,30 +20,31 @@ input {
   border-color: black;
 }
 
-.container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.formulaire {
-  flex-grow: 1;
-}
-
 .card-details {
-  flex-grow: 1;
-  width: 200px;
-  height: 500px;
   border: solid;
   border-color: black;
   box-shadow: black;
-  margin-left: 50px;
 }
 
 .card-details h1 {
   text-align: center;
   margin-top: 10px;
 }
+
 img {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+}
+
+p {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+/*img {
   text-align: center;
   margin: auto;
   width: 200px;
@@ -59,7 +60,7 @@ p {
 h4 {
   text-align: center;
   font-weight: bold;
-}
+}*/
 
 button {
   margin-bottom: 20px;
